@@ -179,22 +179,24 @@ export default function Home() {
                 @media (min-width: 1024px) {
                   .carousel-item { --tz: 450px; }
                 }
-                
-                /* iOS Safari specific fix for reflection clipping */
-                @supports (-webkit-touch-callout: none) {
-                  .reflection-container {
-                    transform: translateX(-50%) scale(0.5) rotateX(89.9deg) translateZ(1px) !important;
-                  }
-                }
               `}
             </style>
-            <div className="carousel-container relative w-full max-w-full h-[150px] sm:h-[100px] lg:h-[150px] mt-[80px] md:mt-[90px] mb-16 flex items-center justify-center">
+            <div 
+              className="carousel-container relative w-full max-w-full h-[150px] sm:h-[100px] lg:h-[150px] mt-[80px] md:mt-[90px] mb-16 flex items-center justify-center"
+              style={{ perspective: "1200px", WebkitPerspective: "1200px" }}
+            >
               {loading ? (
                 <Loader2 className="text-brand animate-spin" size={40} />
               ) : (
                 <motion.div 
                   className="carousel-spinner relative w-[220px] sm:w-[150px] lg:w-[220px] h-full cursor-grab active:cursor-grabbing select-none"
-                  style={{ rotateX: -8, rotateY: rotation, transformStyle: "preserve-3d" }}
+                  style={{ 
+                    rotateX: -8, 
+                    rotateY: rotation, 
+                    z: 0.0001,
+                    transformStyle: "preserve-3d",
+                    WebkitTransformStyle: "preserve-3d"
+                  }}
                   onHoverStart={() => isHovered.current = true}
                   onHoverEnd={() => isHovered.current = false}
                   onPanStart={() => isPanning.current = true}
@@ -215,7 +217,9 @@ export default function Home() {
                         key={item.id} 
                         className="carousel-item absolute top-0 left-0 w-full h-full"
                         style={{ 
-                          transform: `rotateY(${angle}deg) translateZ(var(--tz))`
+                          transform: `rotateY(${angle}deg) translate3d(0, 0, var(--tz))`,
+                          transformStyle: "preserve-3d",
+                          WebkitTransformStyle: "preserve-3d"
                         }}
                       >
                         {/* Main Image or Logo (Rendered at 2x size and scaled down for Pixel-Reserven on mobile Retina displays) */}
