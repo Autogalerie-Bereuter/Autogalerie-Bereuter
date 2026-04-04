@@ -182,22 +182,21 @@ export default function Home() {
               `}
             </style>
             <div 
-              className="carousel-container relative w-full max-w-full h-[150px] sm:h-[100px] lg:h-[150px] mt-[80px] md:mt-[90px] mb-16 flex items-center justify-center"
-              style={{ perspective: "1200px", WebkitPerspective: "1200px" }}
+              className="relative w-full max-w-full h-[150px] sm:h-[100px] lg:h-[150px] mt-[80px] md:mt-[90px] mb-16 flex items-center justify-center"
             >
               {loading ? (
                 <Loader2 className="text-brand animate-spin" size={40} />
               ) : (
-                <motion.div 
-                  className="carousel-spinner relative w-[220px] sm:w-[150px] lg:w-[220px] h-full cursor-grab active:cursor-grabbing select-none"
-                  style={{ 
-                    rotateX: -8, 
-                    rotateY: rotation, 
-                    z: 0.0001,
-                    transformStyle: "preserve-3d",
-                    WebkitTransformStyle: "preserve-3d"
-                  }}
-                  onHoverStart={() => isHovered.current = true}
+                <div className="carousel-container w-full h-full flex items-center justify-center" style={{ perspective: "1200px", WebkitPerspective: "1200px" }}>
+                  <motion.div 
+                    className="carousel-spinner relative w-[220px] sm:w-[150px] lg:w-[220px] h-full cursor-grab active:cursor-grabbing select-none"
+                    style={{ 
+                      rotateX: -8, 
+                      rotateY: rotation, 
+                      transformStyle: "preserve-3d",
+                      WebkitTransformStyle: "preserve-3d"
+                    }}
+                    onHoverStart={() => isHovered.current = true}
                   onHoverEnd={() => isHovered.current = false}
                   onPanStart={() => isPanning.current = true}
                   onPan={(e, info) => {
@@ -260,7 +259,8 @@ export default function Home() {
                       </div>
                     );
                   })}
-                </motion.div>
+                  </motion.div>
+                </div>
               )}
             </div>
 
