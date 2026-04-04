@@ -160,12 +160,15 @@ export default function Home() {
               {`
                 .carousel-container {
                   perspective: 1200px;
+                  -webkit-perspective: 1200px;
                 }
                 .carousel-spinner {
                   transform-style: preserve-3d;
+                  -webkit-transform-style: preserve-3d;
                 }
                 .carousel-item {
                   transform-style: preserve-3d;
+                  -webkit-transform-style: preserve-3d;
                 }
                 @media (max-width: 639px) {
                   .carousel-item { --tz: 450px; }
@@ -175,6 +178,13 @@ export default function Home() {
                 }
                 @media (min-width: 1024px) {
                   .carousel-item { --tz: 450px; }
+                }
+                
+                /* iOS Safari specific fix for reflection clipping */
+                @supports (-webkit-touch-callout: none) {
+                  .reflection-container {
+                    transform: translateX(-50%) scale(0.5) rotateX(0deg) !important;
+                  }
                 }
               `}
             </style>
@@ -217,9 +227,9 @@ export default function Home() {
                           )}
                         </div>
                         
-                        {/* 90-Degree Floor Reflection */}
+                        {/* Floor Reflection */}
                         <div 
-                          className="absolute top-full left-1/2 w-[200%] h-[200%] origin-top pointer-events-none"
+                          className="reflection-container absolute top-full left-1/2 w-[200%] h-[200%] origin-top pointer-events-none"
                           style={{ 
                             transform: 'translateX(-50%) scale(0.5) rotateX(90deg)',
                             WebkitMaskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 0%, transparent 80%)',
