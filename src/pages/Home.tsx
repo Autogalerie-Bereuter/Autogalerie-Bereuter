@@ -163,12 +163,12 @@ export default function Home() {
                   -webkit-perspective: 1200px;
                 }
                 .carousel-spinner {
-                  transform-style: preserve-3d;
-                  -webkit-transform-style: preserve-3d;
+                  transform-style: preserve-3d !important;
+                  -webkit-transform-style: preserve-3d !important;
                 }
                 .carousel-item {
-                  transform-style: preserve-3d;
-                  -webkit-transform-style: preserve-3d;
+                  transform-style: preserve-3d !important;
+                  -webkit-transform-style: preserve-3d !important;
                 }
                 @media (max-width: 639px) {
                   .carousel-item { --tz: 450px; }
@@ -183,7 +183,7 @@ export default function Home() {
                 /* iOS Safari specific fix for reflection clipping */
                 @supports (-webkit-touch-callout: none) {
                   .reflection-container {
-                    transform: translateX(-50%) scale(0.5) rotateX(0deg) !important;
+                    transform: translateX(-50%) scale(0.5) rotateX(89.9deg) translateZ(1px) !important;
                   }
                 }
               `}
@@ -194,7 +194,7 @@ export default function Home() {
               ) : (
                 <motion.div 
                   className="carousel-spinner relative w-[220px] sm:w-[150px] lg:w-[220px] h-full cursor-grab active:cursor-grabbing select-none"
-                  style={{ rotateX: -8, rotateY: rotation }}
+                  style={{ rotateX: -8, rotateY: rotation, transformStyle: "preserve-3d" }}
                   onHoverStart={() => isHovered.current = true}
                   onHoverEnd={() => isHovered.current = false}
                   onPanStart={() => isPanning.current = true}
