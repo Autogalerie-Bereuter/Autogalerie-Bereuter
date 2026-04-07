@@ -145,9 +145,9 @@ export default function Home() {
           >
             <div className="-mt-[40px] flex flex-col items-center w-full z-10 relative">
               <h1 className="text-[30px] md:text-[32px] lg:text-[40px] font-bold tracking-tighter mb-6 leading-[0.95] mt-12 md:mt-20">
-                <span className="block"><span className="text-brand">BERE</span>it deinen</span>
-                <span className="block">A<span className="text-brand">UT</span>oTraum zu</span>
-                <span className="block"><span className="text-brand">ER</span>leben</span>
+                <span className="block"><span className="text-brand">BERE</span>IT DEINEN</span>
+                <span className="block">A<span className="text-brand">UT</span>OTRAUM ZU</span>
+                <span className="block"><span className="text-brand">ER</span>LEBEN</span>
               </h1>
               <p className="text-sm md:text-xl text-gray-400 max-w-xl mb-8 font-light leading-relaxed">
                 Willkommen in der AUTOGALERIE BEREUTER.<br />
