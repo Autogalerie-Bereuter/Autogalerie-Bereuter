@@ -175,9 +175,8 @@ export default function Kontakt() {
                 <div className="flex gap-4 text-gray-400">
                   <Clock className="text-white shrink-0" size={20} />
                   <p className="text-sm leading-relaxed">
-                    Mo - Fr: 09:00 - 18:00<br />
-                    Sa: 10:00 - 14:00<br />
-                    So: Geschlossen
+                    Telefonisch rund um<br />die Uhr erreichbar.<br />
+                    Besichtigungstermin<br />nach Vereinbarung.
                   </p>
                 </div>
               </div>
