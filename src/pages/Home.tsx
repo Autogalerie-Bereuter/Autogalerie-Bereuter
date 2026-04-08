@@ -150,7 +150,7 @@ export default function Home() {
                 <span className="block"><span className="text-brand">ER</span>LEBEN</span>
               </h1>
               <p className="text-sm md:text-xl text-gray-400 max-w-xl mb-8 font-light leading-relaxed">
-                Willkommen in der AUTOGALERIE BEREUTER.<br />
+                Willkommen in der Autogalerie Bereuter.<br />
                 Sie haben einen Traum, wir haben das passende Auto dazu.
               </p>
             </div>
