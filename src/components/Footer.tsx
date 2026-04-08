@@ -74,7 +74,7 @@ export default function Footer() {
       </div>
 
       <div className="max-w-7xl mx-auto px-6 pt-10 border-t border-black/5 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] tracking-widest text-gray-600 uppercase relative z-10">
-        <p>© 2026 AUTOGALERIE BEREUTER. ALL RIGHTS RESERVED.</p>
+        <p>© 2026 Autogalerie Bereuter. ALL RIGHTS RESERVED.</p>
         <div className="flex gap-6">
           <Link to="/impressum" className="hover:text-brand transition-colors">Impressum</Link>
           <Link to="/datenschutz" className="hover:text-brand transition-colors">Datenschutz</Link>
