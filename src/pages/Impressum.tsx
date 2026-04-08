@@ -52,14 +52,6 @@ export default function Impressum() {
               [ATUXXXXXXXX]
             </p>
             <p>
-              <strong className="text-white block mb-1">Firmenbuchnummer:</strong>
-              [FN XXXXXX x]
-            </p>
-            <p>
-              <strong className="text-white block mb-1">Firmenbuchgericht:</strong>
-              [Landesgericht Feldkirch]
-            </p>
-            <p>
               <strong className="text-white block mb-1">Aufsichtsbehörde:</strong>
               Bezirkshauptmannschaft Bregenz
             </p>
