@@ -165,8 +165,8 @@ export default function Kontakt() {
                   <MapPin className="text-white shrink-0" size={20} />
                   <p className="text-sm leading-relaxed">
                     Autogalerie Bereuter<br />
-                    Gschwend 178<br />
-                    6932 Langen bei Bregenz, Österreich
+                    Platz 332<br />
+                    6952 Hittisau, Österreich
                   </p>
                 </div>
               </div>
