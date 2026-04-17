@@ -45,7 +45,7 @@ export default function Footer() {
             </li>
             <li className="flex items-center gap-3 text-gray-600 text-sm">
               <MapPin size={16} className="text-brand" />
-              Gschwend 178, 6932 Langen bei Bregenz
+              Platz 332, 6952 Hittisau
             </li>
           </ul>
         </div>
