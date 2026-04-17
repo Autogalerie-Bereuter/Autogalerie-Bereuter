@@ -54,8 +54,8 @@ export default function Datenschutz() {
             <h2 className="text-xl font-bold text-white uppercase tracking-widest">Sie erreichen uns unter folgenden Kontaktdaten:</h2>
             <p>
               Autogalerie Bereuter<br />
-              Gschwend 178<br />
-              6932 Langen bei Bregenz<br />
+              Platz 332<br />
+              6952 Hittisau<br />
               Österreich<br />
               E-Mail: info@autogalerie-bereuter.at
             </p>
