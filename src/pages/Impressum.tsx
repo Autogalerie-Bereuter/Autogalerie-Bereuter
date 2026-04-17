@@ -27,8 +27,8 @@ export default function Impressum() {
             </p>
             <p>
               <strong className="text-white block mb-1">Adresse:</strong>
-              Gschwend 178<br />
-              6932 Langen bei Bregenz<br />
+              Platz 332<br />
+              6952 Hittisau<br />
               Österreich
             </p>
           </section>
