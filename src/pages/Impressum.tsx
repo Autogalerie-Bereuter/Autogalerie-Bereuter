@@ -49,7 +49,7 @@ export default function Impressum() {
             <h2 className="text-xl font-bold text-white uppercase tracking-widest">Unternehmensdaten</h2>
             <p>
               <strong className="text-white block mb-1">UID-Nummer:</strong>
-              [ATUXXXXXXXX]
+              ATU83158538
             </p>
             <p>
               <strong className="text-white block mb-1">Aufsichtsbehörde:</strong>
