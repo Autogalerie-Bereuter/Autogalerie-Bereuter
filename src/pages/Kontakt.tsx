@@ -198,7 +198,7 @@ export default function Kontakt() {
             {/* Google Maps Embed */}
             <div className="w-full aspect-video bg-white/5 border border-white/10 relative overflow-hidden group">
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2696.657964434241!2d9.82424847688264!3d47.47709999689816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479b13904943f9a7%3A0x6a2c26284643f9a7!2sGschwend%20178%2C%206932%20Langen%20bei%20Bregenz%2C%20%C3%96sterreich!5e0!3m2!1sde!2sde!4v1712123456789!5m2!1sde!2sde" 
+                src="https://maps.google.com/maps?q=Platz%20332,%206952%20Hittisau,%20%C3%96sterreich&hl=de&z=14&output=embed" 
                 className="w-full h-full border-0 grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700" 
                 allowFullScreen={true} 
                 loading="lazy" 
