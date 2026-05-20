@@ -56,7 +56,7 @@ export default function Footer() {
             <a href="https://www.instagram.com/autogalerie_bereuter?igsh=Nm9qZDAydXBxYjY2&utm_source=qr" target="_blank" rel="noopener noreferrer" className="w-10 h-10 border border-black/10 flex items-center justify-center hover:bg-brand hover:border-brand hover:text-white transition-all text-gray-600">
               <Instagram size={20} />
             </a>
-            <a href="#" className="w-10 h-10 border border-black/10 flex items-center justify-center hover:bg-brand hover:border-brand hover:text-white transition-all text-gray-600">
+            <a href="https://www.facebook.com/share/17ibM3szJv/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="w-10 h-10 border border-black/10 flex items-center justify-center hover:bg-brand hover:border-brand hover:text-white transition-all text-gray-600">
               <Facebook size={20} />
             </a>
             <a href="https://www.tiktok.com/@autogaleriebereut?_r=1&_t=ZN-95B9E2SFKeE" target="_blank" rel="noopener noreferrer" className="w-10 h-10 border border-black/10 flex items-center justify-center hover:bg-brand hover:border-brand hover:text-white transition-all text-gray-600">
