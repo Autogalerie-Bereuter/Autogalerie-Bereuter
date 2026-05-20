@@ -189,7 +189,7 @@ export default function Kontakt() {
                   </div>
                   <div className="flex gap-4 text-gray-400 items-center">
                     <Mail className="text-white" size={20} />
-                    <p className="text-sm">info@autogalerie-bereuter.at</p>
+                    <p className="text-sm">info@autogalerie-bereuter.com</p>
                   </div>
                 </div>
               </div>
